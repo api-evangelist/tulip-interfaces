@@ -1,0 +1,111 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "mfg": "https://www.industry-fusion.org/types/v0.9/",
+    "tulip": "https://tulip.co/vocabulary/",
+
+    "TulipInterfaces": {
+      "@id": "schema:Organization",
+      "@context": {
+        "name": "schema:name",
+        "url": "schema:url",
+        "description": "schema:description",
+        "industry": "schema:industry",
+        "foundingDate": "schema:foundingDate",
+        "areaServed": "schema:areaServed"
+      }
+    },
+
+    "TulipApp": {
+      "@id": "tulip:App",
+      "@context": {
+        "appId": "tulip:appId",
+        "name": "schema:name",
+        "description": "schema:description",
+        "version": "schema:version",
+        "stationId": "tulip:stationId",
+        "published": "schema:datePublished",
+        "steps": "tulip:steps"
+      }
+    },
+
+    "TulipTable": {
+      "@id": "tulip:Table",
+      "@context": {
+        "tableId": "tulip:tableId",
+        "name": "schema:name",
+        "description": "schema:description",
+        "columns": "tulip:columns",
+        "recordCount": "tulip:recordCount"
+      }
+    },
+
+    "TulipTableRecord": {
+      "@id": "tulip:TableRecord",
+      "@context": {
+        "id": "@id",
+        "tableId": "tulip:tableId",
+        "fields": "tulip:fields",
+        "createdAt": "schema:dateCreated",
+        "updatedAt": "schema:dateModified"
+      }
+    },
+
+    "TulipStation": {
+      "@id": "tulip:Station",
+      "@context": {
+        "stationId": "tulip:stationId",
+        "name": "schema:name",
+        "location": "schema:location",
+        "machineIds": "tulip:machineIds",
+        "assignedApps": "tulip:assignedApps"
+      }
+    },
+
+    "TulipMachine": {
+      "@id": "tulip:Machine",
+      "@context": {
+        "machineId": "tulip:machineId",
+        "name": "schema:name",
+        "machineType": "tulip:machineType",
+        "attributes": "tulip:attributes",
+        "stationId": "tulip:stationId"
+      }
+    },
+
+    "TulipConnector": {
+      "@id": "tulip:Connector",
+      "@context": {
+        "connectorId": "tulip:connectorId",
+        "name": "schema:name",
+        "connectorType": "tulip:connectorType",
+        "endpointUrl": "schema:url",
+        "authType": "tulip:authType"
+      }
+    },
+
+    "TulipAutomation": {
+      "@id": "tulip:Automation",
+      "@context": {
+        "automationId": "tulip:automationId",
+        "name": "schema:name",
+        "trigger": "tulip:trigger",
+        "actions": "tulip:actions",
+        "enabled": "tulip:enabled"
+      }
+    },
+
+    "Organization": "schema:Organization",
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "name": "schema:name",
+    "url": "schema:url",
+    "description": "schema:description",
+    "identifier": "schema:identifier",
+    "version": "schema:version",
+    "dateCreated": "schema:dateCreated",
+    "dateModified": "schema:dateModified",
+    "industry": "schema:industry",
+    "location": "schema:location"
+  }
+}

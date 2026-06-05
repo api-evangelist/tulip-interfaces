@@ -1,0 +1,140 @@
+vocabulary:
+  name: Tulip Interfaces Vocabulary
+  description: >-
+    Key concepts and terms used in the Tulip manufacturing operations platform,
+    covering the REST API, shop floor operations, Industrial IoT, and low-code
+    app development for frontline operations teams.
+  version: "1.0"
+  terms:
+
+    - term: App
+      definition: >-
+        A no-code/low-code application built in the Tulip platform that guides
+        frontline workers through manufacturing processes step-by-step. Apps are
+        assigned to specific stations and capture structured data during
+        production runs.
+      tags:
+        - core
+        - low-code
+        - frontline-operations
+
+    - term: Table
+      definition: >-
+        A structured data store within Tulip used to persist production records,
+        part tracking data, quality results, and operational metadata. Tables
+        have defined columns and are accessible via the REST API for reading and
+        writing records.
+      tags:
+        - data
+        - storage
+        - api-resource
+
+    - term: TableRecord
+      definition: >-
+        A single row of data within a Tulip Table. Each record contains field
+        values corresponding to the table's column definitions and carries
+        system-generated timestamps for creation and last modification.
+      tags:
+        - data
+        - api-resource
+
+    - term: Station
+      definition: >-
+        A physical or virtual work area on the shop floor where operators use
+        Tulip apps to perform manufacturing tasks. A station may be associated
+        with one or more machines and tracks which apps are currently deployed
+        to it.
+      tags:
+        - shop-floor
+        - hardware
+        - api-resource
+
+    - term: Machine
+      definition: >-
+        A piece of industrial equipment connected to the Tulip platform. Machines
+        expose attributes (sensor readings, status signals, cycle counts) that
+        can be written via the Machine Attributes API and displayed in real-time
+        on station apps.
+      tags:
+        - iiot
+        - hardware
+        - connectivity
+
+    - term: Connector
+      definition: >-
+        A configured integration channel that allows Tulip apps and automations
+        to call external HTTP endpoints, databases, or device APIs. Connectors
+        abstract authentication and transport details from app logic.
+      tags:
+        - integration
+        - connectivity
+        - api-resource
+
+    - term: Automation
+      definition: >-
+        A rule-based workflow that triggers actions (e.g. write a table record,
+        call a connector, send a notification) in response to events such as
+        app step completion, machine attribute changes, or scheduled timers.
+      tags:
+        - workflow
+        - automation
+        - api-resource
+
+    - term: Workspace
+      definition: >-
+        A Tulip tenant environment scoped to an organization or factory. All API
+        calls are authenticated and authorized within the context of a specific
+        workspace using API key tokens.
+      tags:
+        - authentication
+        - multi-tenancy
+
+    - term: MES
+      definition: >-
+        Manufacturing Execution System. A category of industrial software that
+        manages and monitors work-in-process on the shop floor. Tulip is
+        positioned as a next-generation MES that replaces paper-based processes
+        and legacy software with flexible, low-code apps.
+      tags:
+        - industry
+        - manufacturing
+
+    - term: Frontline Operations
+      definition: >-
+        The set of activities performed by shop floor workers who directly
+        interact with production equipment, materials, and processes. Tulip
+        targets frontline operations by providing apps that digitize instructions,
+        inspections, and data capture at the point of work.
+      tags:
+        - industry
+        - operations
+
+    - term: EdgeDevice
+      definition: >-
+        A hardware gateway (Tulip Edge IO or Edge MC) that connects industrial
+        equipment, sensors, and peripherals to the Tulip cloud platform.
+        Edge devices run locally to ensure low-latency data capture and
+        operate reliably in environments with intermittent connectivity.
+      tags:
+        - iiot
+        - hardware
+        - connectivity
+
+    - term: APIKey
+      definition: >-
+        A credential token used to authenticate requests to the Tulip REST API.
+        API keys are scoped to a workspace and carry permission sets that
+        control which resources and operations are accessible.
+      tags:
+        - authentication
+        - security
+
+    - term: Analytics
+      definition: >-
+        Built-in dashboards and metrics available in the Tulip platform that
+        aggregate production data captured through apps and machines. Analytics
+        can track cycle times, defect rates, and operator performance across
+        stations.
+      tags:
+        - data
+        - reporting
