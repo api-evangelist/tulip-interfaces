@@ -1,0 +1,66 @@
+aid: tulip-interfaces
+name: Tulip Interfaces
+description: >-
+  Tulip is a manufacturing operations platform that enables frontline operations teams
+  to build apps, connect machines and devices, and analyze production data without
+  code. The Tulip REST API provides programmatic access to apps, tables, connectors,
+  stations, automations, and analytics, supporting integration with ERP, MES, and
+  industrial equipment on the shop floor.
+type: Index
+url: https://raw.githubusercontent.com/api-evangelist/tulip-interfaces/refs/heads/main/apis.yml
+tags:
+  - Manufacturing
+  - MES
+  - Industrial IoT
+  - Shop Floor
+  - Low-Code
+  - Frontline Operations
+created: '2026-06-05'
+modified: '2026-06-05'
+specificationVersion: '0.19'
+apis:
+  - aid: tulip-interfaces:tulip-api
+    name: Tulip API
+    description: >-
+      The Tulip REST API gives programmatic access to the Tulip manufacturing operations
+      platform, organized into namespaces covering apps, tables, table records, connectors,
+      stations, and automations. Each namespace is independently versioned. JSON is returned
+      by all endpoints. Authentication uses API key tokens scoped to a Tulip workspace.
+    humanURL: https://support.tulip.co/apidocs/introduction
+    baseURL: https://api.tulip.co
+    tags:
+      - Manufacturing
+      - Shop Floor
+      - Tables
+      - Stations
+      - Automations
+      - REST
+    properties:
+      - url: https://support.tulip.co/apidocs/introduction
+        type: Documentation
+      - url: https://docs.tulip.com/integrating/tulip-api/
+        type: Portal
+common:
+  - type: Website
+    url: https://tulip.co
+  - type: Documentation
+    url: https://support.tulip.co/apidocs/introduction
+  - type: Portal
+    url: https://docs.tulip.com/integrating/overview/
+  - type: Blog
+    url: https://tulip.co/blog/
+  - type: GitHubOrganization
+    url: https://github.com/tulip
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/tulip-interfaces
+  - type: YouTube
+    url: https://www.youtube.com/@TulipInterfaces
+  - type: Pricing
+    url: https://tulip.co/pricing/
+  - type: About
+    url: https://tulip.co/company/
+  - type: Integrations
+    url: https://tulip.co/platform/integrations/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
