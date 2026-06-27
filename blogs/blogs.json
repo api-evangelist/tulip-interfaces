@@ -3,19 +3,12 @@
   "feeds": [
     {
       "source": "https://tulip.co/blog/",
-      "feed_url": "https://tulip.co/blog/",
-      "title": "",
-      "saved": 0,
-      "method": "none"
-    },
-    {
-      "source": "https://docs.tulip.com/integrating/overview/",
-      "feed_url": "https://docs.tulip.com/integrating/overview/",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "feed_url": "",
+      "saved": 1,
+      "method": "agent-scrape"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 1,
+  "fetched": "2026-06-27T13:17:40Z",
+  "agent_pulled": "2026-06-27"
 }
