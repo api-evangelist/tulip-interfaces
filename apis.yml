@@ -41,6 +41,10 @@ apis:
       - url: https://docs.tulip.com/integrating/tulip-api/
         type: Portal
 common:
+  - type: VulnerabilityDisclosure
+    url: security/tulip-interfaces-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/tulip-interfaces-domain-security.yml
   - type: Website
     url: https://tulip.co
   - type: Documentation
