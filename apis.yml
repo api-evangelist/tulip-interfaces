@@ -56,6 +56,13 @@ apis:
       - Shop Floor
       - Tables
       - Stations
+      - Automation
+      - REST
+    tags_raw:
+      - Manufacturing
+      - Shop Floor
+      - Tables
+      - Stations
       - Automations
       - REST
     properties:
